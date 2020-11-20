@@ -1,0 +1,13 @@
+url,response_codes,response_time_avg,response_time_min,response_time_max
+/search/transaction?q=((transaction_recipient_country_code:(NG)%20OR%20activity_recipient_country_code:(NG))%20AND%20transaction_date_iso_date:[2015-12-31T00:00:00Z%20TO%20*])&wt=csv&tr=transaction-csv.xsl&rows=10,"{""200"": 10}",0.5742821,0.516607,0.681985
+/search/activity?q=recipient_country_code:(NG)&wt=xslt&tr=activity-csv.xsl&rows=10,"{""200"": 10}",0.5353777,0.424992,0.651719
+/search/transaction?q=((transaction_recipient_country_code:(NG)%20OR%20activity_recipient_country_code:(NG))%20AND%20transaction_date_iso_date:[2015-12-31T00:00:00Z%20TO%20*])&wt=csv&tr=transaction-csv.xsl&rows=100,"{""200"": 10}",0.5748359,0.489536,0.737586
+/search/activity?q=recipient_country_code:(NG)&wt=xslt&tr=activity-csv.xsl&rows=100,"{""200"": 10}",0.908793,0.754322,1.104545
+/search/transaction?q=((transaction_recipient_country_code:(NG)%20OR%20activity_recipient_country_code:(NG))%20AND%20transaction_date_iso_date:[2015-12-31T00:00:00Z%20TO%20*])&wt=csv&tr=transaction-csv.xsl&rows=1000,"{""200"": 10}",0.8241041,0.733799,0.888493
+/search/activity?q=recipient_country_code:(NG)&wt=xslt&tr=activity-csv.xsl&rows=1000,"{""200"": 10}",3.5958545,3.044975,4.11817
+/search/transaction?q=((transaction_recipient_country_code:(NG)%20OR%20activity_recipient_country_code:(NG))%20AND%20transaction_date_iso_date:[2015-12-31T00:00:00Z%20TO%20*])&wt=csv&tr=transaction-csv.xsl&rows=10000,"{""200"": 10}",1.2115679,1.087703,1.392402
+/search/activity?q=recipient_country_code:(NG)&wt=xslt&tr=activity-csv.xsl&rows=10000,"{""200"": 10}",54.7985309,49.117218,58.058254
+/search/transaction?q=((transaction_recipient_country_code:(NG)%20OR%20activity_recipient_country_code:(NG))%20AND%20transaction_date_iso_date:[2015-12-31T00:00:00Z%20TO%20*])&wt=csv&tr=transaction-csv.xsl&rows=100000,"{""200"": 10}",5.0070534,4.700096,5.361462
+/search/activity?q=recipient_country_code:(NG)&wt=xslt&tr=activity-csv.xsl&rows=100000,"{""200"": 10}",62.561375,57.973161,69.170879
+/search/transaction?q=((transaction_recipient_country_code:(NG)%20OR%20activity_recipient_country_code:(NG))%20AND%20transaction_date_iso_date:[2015-12-31T00:00:00Z%20TO%20*])&wt=csv&tr=transaction-csv.xsl&rows=1000000,"{""200"": 10}",5.1970029,4.360881,6.099409
+/search/activity?q=recipient_country_code:(NG)&wt=xslt&tr=activity-csv.xsl&rows=1000000,"{""200"": 8, ""504"": 2}",69.8504225,60.4297,86.389105
